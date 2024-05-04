@@ -1,0 +1,483 @@
+@charset "UTF-8";
+@font-face {
+    font-family: grafolita ;
+    src: url(font/GrafolitaScript-Bold.ttf) format(truetype);
+}
+
+ /* Corpo */
+
+body {
+    background-image: linear-gradient(to right, #CAE6DF, #FBE1EE);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+/* Topo Frete */
+
+#frete-topo {
+    background-color: #723564;
+    color: #ffffff;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    font: italic 18px 'Times New Roman', Times, serif;
+}
+
+/* Base Topo */
+
+.base-topo {
+    display: flex;
+    justify-content: center;
+}
+
+/* Topo Logo */
+
+.base-topo .logo-topo {
+    margin: 0 0 0 15%;
+}
+
+#logo-img {
+    transition: transform 0.5s ease-in-out; 
+}
+
+#logo-img:hover {
+    transform: scale(1.2);
+}
+
+#logo-img img {
+    width: 250px; 
+    height: 150px; 
+    padding: 0;
+}
+
+/* Topo Login */
+
+#login-icon {
+    transition: transform 0.5s ease-in-out; 
+}
+
+#login-icon:hover {
+    transform: scale(1.2);
+}
+
+#login-icon img {
+    width: 35px; 
+    height: 35px;
+    border: 1px solid #5e381a;
+    border-radius: 22px;
+}
+
+/* Formulario Login */
+
+#meu-dropdown {
+    position: relative; /* Garante que o menu dropdown seja posicionado em relação ao botão */
+    right: 165px;
+  }
+  
+  #meu-dropdown ul {
+    list-style-type: none; /* Remove os marcadores de lista padrão */
+    padding: 0;
+    margin: 0;
+    position: absolute; /* Permite que o menu dropdown flutue sobre outros elementos */
+    min-width: 170px;
+    background-color: #FBE1EE;;
+    border: 1px solid #5e381a;
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .drop-conf {
+    display: flex;
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .drop-conf img {
+    width: 20px; 
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .drop-conf:hover {
+    background-color: #ceb9c3;
+  }
+
+  #meu-dropdown ul li {
+    padding: 12px 16px;
+    font: italic 18px 'Times New Roman', Times, serif;
+    color: #000000;
+  }
+  
+  #meu-dropdown ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+  }
+  
+
+/* Topo Carrinho */
+
+.base-topo .carrinho-topo {
+    margin: 0 0 0 5px;
+}
+
+#carrinho-icon img {
+    width: 35px; 
+    height: 35px;
+    border: 1px solid #5e381a;
+    border-radius: 22px;
+}
+
+.icones-topo {
+    display: flex;
+    padding-top: 2%;
+    margin: 0 0 0 10%;
+}
+
+#carrinho-icon {
+    transition: transform 0.5s ease-in-out; 
+}
+
+#carrinho-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Navegação */
+
+.container {    
+    display: flex;
+    justify-content: center;
+    width: 55%;
+    margin: 0 auto;
+    background-color: #F8EE9C;
+    box-shadow: 5px 5px 5px 5px#86787f5b;
+    border-radius: 15px;    
+}
+
+
+.container ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-ico {   
+    display: flex; 
+    font: italic bolder 18px 'Times New Roman', Times, serif;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-ico img {
+    width: 30px;
+    height: 30px;
+}
+
+.nav-ico:hover {        
+    transform: scale(1.2);
+}
+
+.nav-ico:hover a {
+    color: #b46b33;
+}
+
+.nav-ico li {
+    margin-top: 7px;  
+    margin-left: 5px;  
+    margin-right: 20px;
+}
+
+.nav-ico a {
+    text-decoration: none;
+    color: #5e381a;
+    font-weight: bold;
+}
+
+/* Navegação para Celular*/
+
+#icon-menu {
+    display: none;
+    margin-top: 7px;
+    margin-left: 40px;
+}
+
+#icon-menu img {
+    width: 15px;
+    height: 15px;
+}
+
+/* Drop Navegação */
+
+#nav-dropdown {
+    position: relative; /* Garante que o menu dropdown seja posicionado em relação ao botão */
+    width: 100%;
+
+  }
+  
+  #nav-dropdown ul {
+    list-style-type: none; /* Remove os marcadores de lista padrão */
+    background-color: #F8EE9C;
+    border-radius: 25px;
+    z-index: 5;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .nav-conf {
+    display: flex;
+    margin-top: 15px;
+    margin-right: 0;
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-conf:hover {
+    transform: scale(1.2);
+  }
+
+  .nav-conf li {
+    margin-top: 3px;  
+    margin-left: 25px;   
+    font: italic bolder 18px 'Times New Roman', Times, serif;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-conf a {
+    text-decoration: none;
+    color: #5e381a;
+    font-weight: bold;
+  }
+
+  .nav-conf img {
+    width: 25px;
+    height: 25px;
+  }
+
+  /* Botão Pesquisar */
+
+  #pesquisar {
+    justify-content: center;
+    display: flex;
+}
+
+
+
+form input[type="search"]{
+    border: 1px solid #5e381a;
+    width: 10px;
+    height: 10px;
+    padding: 20px;
+    border-radius: 200px;
+    box-shadow: 4px 4px 6px rgb(0,0,0,0,7);
+    background: url(../assets/icones/procurar.png) no-repeat center center;
+    background-size: 20px;
+    transition: width 0.5s ease;
+}
+
+form input[type="search"]:focus {
+    width: 25%;
+    height: 100%;
+    padding: 6px 6px 6px 55px;
+    outline: none;
+    background: url(../assets/icones/procurar.png) no-repeat 20px center;
+    background-size: 18px;
+    text-align: center;
+    padding-right: 30px;
+    font: italic 17px 'Times New Roman', Times, serif;
+    color: rgb(83, 83, 83);
+}
+
+/* Responsividade */
+
+@media only screen and (max-width: 1290px) {
+
+    .base-topo .logo-topo {
+        margin: 0 0 0 20%;
+    }
+
+    .nav-ico{
+        display: none;
+    }
+
+    #icon-menu {
+        display: block;
+    }
+}
+
+ /* Tablet */
+
+@media only screen and (max-width: 992px) {
+
+    /*Frete*/
+
+    #frete-topo {
+        background-color: #723564;
+        color: #ffffff;
+        margin: 0;
+        padding: 5px;
+        text-align: center;
+        font: italic 13px 'Times New Roman', Times, serif;
+    }
+
+    /*Logo*/
+
+    #logo-img img {
+        width: 200px; 
+        height: 120px; 
+        padding: 0;
+    }
+
+    /*Icones*/
+
+    .icones-topo {
+      flex-direction: column; /* Alinha os ícones um abaixo do outro em dispositivos móveis */
+    }
+
+    .base-topo .carrinho-topo {
+        margin: 0 0 0 0;
+    }
+
+    #carrinho-icon img {
+        width: 25px; 
+        height: 25px;
+        border: 1px solid #5e381a;
+        border-radius: 22px;
+    }
+
+    #login-icon img {
+        width: 25px; 
+        height: 25px;
+        border: 1px solid #5e381a;
+        border-radius: 22px;
+    }
+
+    /* Form Login*/
+
+    #meu-dropdown {
+        right: 145px;
+        bottom: 5px;
+      }
+
+    #meu-dropdown ul {
+        min-width: 140px;
+      }
+      
+      .drop-conf img {
+        width: 15px; 
+        height: 15px;
+      }
+    
+      #meu-dropdown ul li {
+        font: italic 15px 'Times New Roman', Times, serif;
+      }
+
+    /* Navegação Celular*/
+
+    #icon-menu {
+        display: block;
+    }
+
+    .nav-conf img {
+        width: 20px;
+        height: 20px;
+      }
+
+    .nav-conf li {  
+        font: italic bolder 15px 'Times New Roman', Times, serif;
+    }
+
+    /* Pesquisar */
+
+    form input[type="search"]{
+      padding: 17px;
+      background-size: 18px;
+  }
+  
+  form input[type="search"]:focus {
+      height: 35px;
+      padding: 6px 6px 6px 30px;
+      background-size: 18px;
+      font: italic 15px 'Times New Roman', Times, serif;
+  }
+  }
+
+  /* Celular */
+
+  @media only screen and (max-width: 576px) {
+
+    /*Frete*/
+
+    #frete-topo {
+        background-color: #723564;
+        color: #ffffff;
+        margin: 0;
+        padding: 5px;
+        text-align: center;
+        font: italic 13px 'Times New Roman', Times, serif;
+    }
+
+    /*Logo*/
+
+    #logo-img img {
+        width: 150px; 
+        height: 100px; 
+        padding: 0;
+    }
+
+    /*Icones*/
+
+    .icones-topo {
+      flex-direction: column; /* Alinha os ícones um abaixo do outro em dispositivos móveis */
+    }
+
+    .base-topo .carrinho-topo {
+        margin: 0 0 0 0;
+    }
+
+    #carrinho-icon img {
+        width: 20px; 
+        height: 20px;
+        border: 1px solid #5e381a;
+        border-radius: 22px;
+    }
+
+    #login-icon img {
+        width: 20px; 
+        height: 20px;
+        border: 1px solid #5e381a;
+        border-radius: 22px;
+    }
+
+    /* Navegação Celular*/
+
+    #icon-menu {
+        display: block;
+    }
+
+    .nav-conf img {
+        width: 13px;
+        height: 13px;
+      }
+
+    .nav-conf li {  
+        font: italic bolder 10px 'Times New Roman', Times, serif;
+    }
+
+    /* Pesquisar */
+
+    form input[type="search"]{
+      padding: 14px;
+      background-size: 16px;
+  }
+  
+  form input[type="search"]:focus {
+    width: 30%;
+      padding-left: 40px;
+      background-size: 16px;
+      font: italic 13px 'Times New Roman', Times, serif;
+  }
+  }

@@ -1,0 +1,135 @@
+/* Configuração do Footer */
+
+.container-footer {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #6d4965;
+    border-radius: 15px; 
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    
+}
+
+.footer-section p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+}
+
+.newsletter-form input[type="email"] {
+    width:200px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    flex: 1;
+}
+
+.newsletter-form button {
+    width: 150px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e66cc9;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out; 
+}
+
+.newsletter-form button:hover {
+    background-color: #8b437b;
+    transform: scale(1.1);
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+}
+.social-links img {
+    height: 30px;
+    transition: transform 0.5s ease-in-out;        
+}
+
+.social-links img:hover {        
+    transform: scale(1.3);
+}
+
+.forma-pagamento img{
+    margin: 0;
+    padding: 0;
+    width: 220px;
+    height: 117px;
+}
+
+.footer-bottom {
+    background-color: #222;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #fff;
+}
+#titulo-footer {
+    color: #CAE6DF;
+    font: italic bolder 20px 'Times New Roman', Times, serif;
+}
+#paragrafo-footer {
+    color: white;
+    font: italic 18px 'Times New Roman', Times, serif;
+    padding-left: 0;
+}
+
+
+@media only screen and (max-width: 1290px) {
+
+
+}
+
+@media only screen and (max-width: 650px) {
+
+    
+}
+
+@media only screen and (max-width: 370px) {
+
+    
+}
