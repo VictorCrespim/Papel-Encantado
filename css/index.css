@@ -6,3 +6,62 @@
     box-shadow: 5px 5px 5px 5px#86787f5b;
     border-radius: 15px;  
   }
+
+/* teste */
+
+  /* Responsividade */
+
+@media only screen and (max-width: 1290px) {
+
+  #cont-index #teste1 {
+    display: block;
+    text-align: center;
+  }
+
+  #cont-index #teste2 {
+    display: none;
+  }
+
+  #cont-index #teste3 {
+    display: none;
+  }
+
+}
+
+/* Tablet */
+
+@media only screen and (max-width: 992px) {
+
+  #cont-index #teste2 {
+    display: block;
+    text-align: center;
+  }
+
+  #cont-index #teste1 {
+    display: none;
+  }
+
+  #cont-index #teste3 {
+    display: none;
+  }
+
+}
+
+/* Celular */
+
+@media only screen and (max-width: 576px) {
+
+  #cont-index #teste3 {
+    display: block;
+    text-align: center;
+  }
+
+  #cont-index #teste1 {
+    display: none;
+  }
+
+  #cont-index #teste2 {
+    display: none;
+  }
+
+}
