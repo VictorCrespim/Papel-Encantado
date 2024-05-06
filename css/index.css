@@ -1,3 +1,9 @@
+@charset "UTF-8";
+@font-face {
+    font-family: grafolita ;
+    src: url(font/GrafolitaScript-Bold.ttf) format(truetype);
+}
+
 #cont-index {
     width: 90%;
     margin: 0 auto;
@@ -7,7 +13,19 @@
     border-radius: 15px;  
   }
 
-/* teste */
+  #cont-index #teste1 {
+    text-align: center;
+  }
+
+  #cont-index #teste2 {
+    display: none;
+  }
+
+  #cont-index #teste3 {
+    display: none;
+  }
+
+  /* teste */
 
   /* Responsividade */
 
