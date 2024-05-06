@@ -1,8 +1,5 @@
 @charset "UTF-8";
-@font-face {
-    font-family: grafolita ;
-    src: url(font/GrafolitaScript-Bold.ttf) format(truetype);
-}
+
 
  /* Corpo */
 
@@ -358,12 +355,12 @@ form input[type="search"]:focus {
     /* Form Login*/
 
     #meu-dropdown {
-        right: 145px;
+        right: 155px;
         bottom: 5px;
       }
 
     #meu-dropdown ul {
-        min-width: 140px;
+        min-width: 150px;
       }
       
       .drop-conf img {
@@ -372,7 +369,7 @@ form input[type="search"]:focus {
       }
     
       #meu-dropdown ul li {
-        font: italic 15px 'Times New Roman', Times, serif;
+        font: italic 13px 'Times New Roman', Times, serif;
       }
 
     /* Navegação Celular*/
@@ -451,6 +448,26 @@ form input[type="search"]:focus {
         border: 1px solid #5e381a;
         border-radius: 22px;
     }
+
+    /* Form Login*/
+
+    #meu-dropdown {
+        right: 145px;
+        bottom: 5px;
+      }
+
+    #meu-dropdown ul {
+        min-width: 140px;
+      }
+      
+      .drop-conf img {
+        width: 12px; 
+        height: 12px;
+      }
+    
+      #meu-dropdown ul li {
+        font: italic 10px 'Times New Roman', Times, serif;
+      }
 
     /* Navegação Celular*/
 
