@@ -14,9 +14,12 @@ body {
 
 #frete-topo {
     background-color: #723564;
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     color: #ffffff;
     margin: 0;
-    padding: 5px;
+    padding: 4px;
     text-align: center;
     font: italic 18px 'Times New Roman', Times, serif;
 }
@@ -290,7 +293,7 @@ form input[type="search"]:focus {
 
 /* Responsividade */
 
-@media only screen and (max-width: 1290px) {
+@media only screen and (max-width: 1334px) {
 
     .base-topo .logo-topo {
         margin: 0 0 0 20%;
