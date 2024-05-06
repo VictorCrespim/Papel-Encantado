@@ -8,7 +8,6 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     background-color: #6d4965;
     border-radius: 15px; 
     border-bottom-left-radius: 0%;
@@ -28,7 +27,6 @@
 
 .footer-section p {
     margin: 0;
-    line-height: 1.6;
 }
 
 .footer-section ul {
@@ -62,6 +60,7 @@
     border-radius: 5px;
     margin-right: 10px;
     flex: 1;
+    font: italic 16px 'Times New Roman', Times, serif;
 }
 
 .newsletter-form button {
@@ -70,6 +69,7 @@
     border: none;
     border-radius: 5px;
     background-color: #e66cc9;
+    font: italic 16px 'Times New Roman', Times, serif;
     color: #fff;
     cursor: pointer;
     transition: transform 0.5s ease-in-out; 
@@ -95,9 +95,9 @@
 
 .forma-pagamento img{
     margin: 0;
+    margin-bottom: 15px;
     padding: 0;
-    width: 220px;
-    height: 117px;
+    height: 110px;
 }
 
 .footer-bottom {
@@ -109,6 +109,7 @@
 .footer-bottom p {
     margin: 0;
     color: #fff;
+    font: italic 16px 'Times New Roman', Times, serif;
 }
 #titulo-footer {
     color: #CAE6DF;
@@ -121,17 +122,85 @@
 }
 
 
-@media only screen and (max-width: 1290px) {
+/* Responsividade */
+/* Tablet */
 
+@media only screen and (max-width: 992px) {
 
+    #titulo-footer {
+        font: italic bolder 15px 'Times New Roman', Times, serif;
+    }
+
+    #paragrafo-footer {
+        font: italic 13px 'Times New Roman', Times, serif;
+    }
+
+    .newsletter-form {
+        display: block;
+        align-items: center;
+    }
+
+    .newsletter-form input[type="email"] {
+        width:150px;
+        margin-bottom: 10px;
+        font: italic 13px 'Times New Roman', Times, serif;
+    }
+    
+    .newsletter-form button {
+        width: 100px;
+        font: italic 12px 'Times New Roman', Times, serif;
+    }
+    
+    .social-links img {
+        height: 25px;      
+    }
+
+    .forma-pagamento img{
+        height: 80px;
+    }
+
+    .footer-bottom p {
+        font: italic 13px 'Times New Roman', Times, serif;
+    }
 }
 
-@media only screen and (max-width: 650px) {
+/* Celular */
 
+@media only screen and (max-width: 576px) {
+
+    #titulo-footer {
+        font: italic bolder 13px 'Times New Roman', Times, serif;
+    }
+
+    #paragrafo-footer {
+        font: italic 10px 'Times New Roman', Times, serif;
+    }
+
+    .newsletter-form {
+        display: block;
+        align-items: center;
+    }
+
+    .newsletter-form input[type="email"] {
+        width:110px;
+        margin-bottom: 10px;
+        font: italic 10px 'Times New Roman', Times, serif;
+    }
     
-}
-
-@media only screen and (max-width: 370px) {
-
+    .newsletter-form button {
+        width: 85px;
+        font: italic 9px 'Times New Roman', Times, serif;
+    }
     
+    .social-links img {
+        height: 20px;      
+    }
+
+    .forma-pagamento img{
+        height: 60px;
+    }
+
+    .footer-bottom p {
+        font: italic 10px 'Times New Roman', Times, serif;
+    }
 }
