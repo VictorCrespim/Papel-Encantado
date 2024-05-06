@@ -8,8 +8,8 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    background-color: #6d4965;
-    border-radius: 15px; 
+    background-color: #723564;
+    border-radius: 30px; 
     border-bottom-left-radius: 0%;
     border-bottom-right-radius: 0%;
 }
@@ -68,7 +68,7 @@
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #e66cc9;
+    background-color: #aa4f95;
     font: italic 16px 'Times New Roman', Times, serif;
     color: #fff;
     cursor: pointer;
@@ -76,7 +76,7 @@
 }
 
 .newsletter-form button:hover {
-    background-color: #8b437b;
+    background-color: #f164d0;
     transform: scale(1.1);
 }
 
