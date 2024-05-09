@@ -145,15 +145,15 @@
   }
 
   #titulo-produto {
-    font: bolder 12px 'Times New Roman', Times, serif;
+    font: bolder 10px 'Times New Roman', Times, serif;
   }
 
   .price {
-    font: bolder 12px 'Times New Roman', Times, serif;
+    font: bolder 10px 'Times New Roman', Times, serif;
   }
 
   .product button {
-    font: italic 10px 'Times New Roman', Times, serif;
-    padding: 8px 25px;
+    font: italic 19px 'Times New Roman', Times, serif;
+    padding: 8px 23px;
   }
 }
