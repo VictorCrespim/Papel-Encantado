@@ -293,7 +293,7 @@ form input[type="search"]:focus {
 
 /* Responsividade */
 
-@media only screen and (max-width: 1334px) {
+@media only screen and (max-width: 1349px) {
 
     .base-topo .logo-topo {
         margin: 0 0 0 20%;
