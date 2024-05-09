@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
     font-family: grafolita ;
-    src: url(font/GrafolitaScript-Bold.ttf) format(truetype);
+    src: url(../font/GrafolitaScript-Bold.ttf) format(truetype);
 }
 
 #cont-index {
@@ -11,75 +11,144 @@
     background-color: #FBE1EE;
     box-shadow: 5px 5px 5px 5px#86787f5b;
     border-radius: 15px;  
-  }
-
-  #cont-index #teste1 {
-    text-align: center;
-  }
-
-  #cont-index #teste2 {
-    display: none;
-  }
-
-  #cont-index #teste3 {
-    display: none;
-  }
-
-  /* teste */
-
-  /* Responsividade */
-
-@media only screen and (max-width: 1290px) {
-
-  #cont-index #teste1 {
-    display: block;
-    text-align: center;
-  }
-
-  #cont-index #teste2 {
-    display: none;
-  }
-
-  #cont-index #teste3 {
-    display: none;
-  }
-
 }
 
-/* Tablet */
+.product-section {
+    background-color: #f1bde5;
+    width: 98%;
+    margin-top: 10px;
+    display: block; /* Necessário para o margin funcionar */
+    margin-left: auto; /* aqui */
+    margin-right: auto; /* e aqui */
+    border-radius: 15px; 
+}
+
+.product-section h2 {
+  text-align: center;
+  color: #945F35;
+  font: bold 4em grafolita, sans-serif;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;  
+}
+
+.product-list .product {
+  width: 220px;
+  padding: 0 0 10px 0;
+  border: 1px solid #666666;
+  border-radius: 20px;
+  text-align: center;
+  color: black;
+  background-color: #e66cc9;
+  transition: transform 0.3s ease-in-out;  
+  margin-bottom: 20px;  
+}
+
+.product-list .product:hover {        
+  transform: scale(1.1);
+}
+
+.product img {
+  width: 220px;
+  height: 170px;
+  border-radius: 20px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  border-bottom: 1px solid #666666;
+}
+
+#titulo-produto {
+  color: white;
+  margin: 10px 0 0 0;
+  padding: 0;
+  font: bolder 22px 'Times New Roman', Times, serif;
+}
+
+.price {
+  margin: 10px 0 10px 0;
+  font: bolder 22px 'Times New Roman', Times, serif;
+  color: #ffc4f1;
+  text-shadow: 1px 1px 3px #000000;
+}
+
+.product button {
+  background-color: #bd55a6;
+  font: italic 20px 'Times New Roman', Times, serif;
+  color: #fff;
+  border: 1px solid #853c75;
+  padding: 8px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product button:hover {
+  background-color: #723564;
+}
+
+  /* Responsividade */
+  /* Tablet */
 
 @media only screen and (max-width: 992px) {
 
-  #cont-index #teste2 {
-    display: block;
-    text-align: center;
+  .product-section h2 {
+    font: bold 3em grafolita, sans-serif;
+  }
+  
+  .product-list .product {
+    width: 180px;
   }
 
-  #cont-index #teste1 {
-    display: none;
+  .product img {
+    width: 180px;
+    height: 140px;
   }
 
-  #cont-index #teste3 {
-    display: none;
+  #titulo-produto {
+    font: bolder 20px 'Times New Roman', Times, serif;
   }
 
+  .price {
+    font: bolder 20px 'Times New Roman', Times, serif;
+  }
+
+  .product button {
+    font: italic 17px 'Times New Roman', Times, serif;
+    padding: 8px 33px;
+  }
 }
 
 /* Celular */
 
 @media only screen and (max-width: 576px) {
-
-  #cont-index #teste3 {
-    display: block;
-    text-align: center;
+  .product-section h2 {
+    font: bold 2em grafolita, sans-serif;
+  }
+  
+  .product-list .product {
+    width: 120px;
   }
 
-  #cont-index #teste1 {
-    display: none;
+  .product img {
+    width: 120px;
+    height: 90px;
   }
 
-  #cont-index #teste2 {
-    display: none;
+  #titulo-produto {
+    font: bolder 14px 'Times New Roman', Times, serif;
   }
 
+  .price {
+    font: bolder 14px 'Times New Roman', Times, serif;
+  }
+
+  .product button {
+    font: italic 12px 'Times New Roman', Times, serif;
+    padding: 8px 23px;
+  }
 }
