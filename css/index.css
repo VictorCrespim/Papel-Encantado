@@ -128,7 +128,7 @@
 @media only screen and (max-width: 576px) {
 
   .product-section {
-    width: 94%;
+    width: 91%;
 }
 
   .product-section h2 {
@@ -145,15 +145,15 @@
   }
 
   #titulo-produto {
-    font: bolder 10px 'Times New Roman', Times, serif;
+    font: bolder 14px 'Times New Roman', Times, serif;
   }
 
   .price {
-    font: bolder 10px 'Times New Roman', Times, serif;
+    font: bolder 14px 'Times New Roman', Times, serif;
   }
 
   .product button {
-    font: italic 8px 'Times New Roman', Times, serif;
-    padding: 8px 20px;
+    font: italic 11px 'Times New Roman', Times, serif;
+    padding: 8px 25px;
   }
 }
