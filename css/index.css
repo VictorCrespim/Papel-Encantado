@@ -126,6 +126,11 @@
 /* Celular */
 
 @media only screen and (max-width: 576px) {
+
+  .product-section {
+    width: 94%;
+}
+
   .product-section h2 {
     font: bold 2em grafolita, sans-serif;
   }
@@ -140,15 +145,15 @@
   }
 
   #titulo-produto {
-    font: bolder 8px 'Times New Roman', Times, serif;
+    font: bolder 10px 'Times New Roman', Times, serif;
   }
 
   .price {
-    font: bolder 8px 'Times New Roman', Times, serif;
+    font: bolder 10px 'Times New Roman', Times, serif;
   }
 
   .product button {
-    font: italic 6px 'Times New Roman', Times, serif;
-    padding: 8px 17px;
+    font: italic 8px 'Times New Roman', Times, serif;
+    padding: 8px 20px;
   }
 }
