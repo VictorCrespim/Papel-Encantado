@@ -131,24 +131,24 @@
   }
   
   .product-list .product {
-    width: 120px;
+    width: 125px;
   }
 
   .product img {
-    width: 120px;
+    width: 125px;
     height: 90px;
   }
 
   #titulo-produto {
-    font: bolder 10px 'Times New Roman', Times, serif;
+    font: bolder 8px 'Times New Roman', Times, serif;
   }
 
   .price {
-    font: bolder 10px 'Times New Roman', Times, serif;
+    font: bolder 8px 'Times New Roman', Times, serif;
   }
 
   .product button {
-    font: italic 8px 'Times New Roman', Times, serif;
-    padding: 8px 18px;
+    font: italic 6px 'Times New Roman', Times, serif;
+    padding: 8px 17px;
   }
 }
