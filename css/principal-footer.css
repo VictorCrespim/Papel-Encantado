@@ -85,7 +85,7 @@
     margin-right: 10px;
 }
 .social-links img {
-    height: 30px;
+    height: 40px;
     transition: transform 0.5s ease-in-out;        
 }
 
@@ -152,7 +152,7 @@
     }
     
     .social-links img {
-        height: 25px;      
+        height: 30px;      
     }
 
     .forma-pagamento img{
@@ -193,7 +193,7 @@
     }
     
     .social-links img {
-        height: 20px;      
+        height: 25px;      
     }
 
     .forma-pagamento img{

@@ -5,8 +5,8 @@
 }
 
 #cont-index {
-    width: 90%;
-    margin: 0 auto;
+    width: 95%;
+    margin: auto;
     padding: 10px 0;
     background-color: #FBE1EE;
     box-shadow: 5px 5px 5px 5px#86787f5b;
@@ -66,7 +66,7 @@
   color: white;
   margin: 10px 0 0 0;
   padding: 0;
-  font: bolder 22px 'Times New Roman', Times, serif;
+  font: 26px grafolita, Times, serif;
 }
 
 .price {
@@ -110,7 +110,7 @@
   }
 
   #titulo-produto {
-    font: bolder 20px 'Times New Roman', Times, serif;
+    font: 20px grafolita, Times, serif;
   }
 
   .price {
@@ -145,15 +145,15 @@
   }
 
   #titulo-produto {
-    font: bolder 10px 'Times New Roman', Times, serif;
+    font: 16px grafolita, Times, serif;
   }
 
   .price {
-    font: bolder 10px 'Times New Roman', Times, serif;
+    font: bolder 15px 'Times New Roman', Times, serif;
   }
 
   .product button {
-    font: italic 9px 'Times New Roman', Times, serif;
+    font: italic 13px 'Times New Roman', Times, serif;
     padding: 8px 23px;
   }
 }

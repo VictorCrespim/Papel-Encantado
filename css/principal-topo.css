@@ -28,14 +28,30 @@ body {
 
 .base-topo {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+
+/* Botão Pesquisar */
+
+#pesquisar {
+  margin-top: 50px;
+}
+
+form input[type="search"]{
+  border: 1px solid #5e381a;
+  border-radius: 20px;
+  width: 100%;
+  padding: 6px 0 6px 30px;
+  outline: none;
+  background: url(../assets/icones/procurar.png) no-repeat 20px center;
+  background-size: 15px;
+  text-align: center;
+  font: italic 15px 'Times New Roman', Times, serif;
+  color: rgb(83, 83, 83);
 }
 
 /* Topo Logo */
 
-.base-topo .logo-topo {
-    margin: 0 0 0 15%;
-}
 
 #logo-img {
     transition: transform 0.5s ease-in-out; 
@@ -53,19 +69,25 @@ body {
 
 /* Topo Login */
 
-#login-icon {
-    transition: transform 0.5s ease-in-out; 
+.login-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  transition: transform 0.5s ease-in-out; 
 }
 
-#login-icon:hover {
-    transform: scale(1.2);
-}
-
-#login-icon img {
+.login-icon img {
     width: 35px; 
     height: 35px;
-    border: 1px solid #5e381a;
-    border-radius: 22px;
+}
+
+.login-icon p {
+  font: bolder italic 18px 'Times New Roman', Times, serif;
+  margin-left: 5px;
+}
+
+.login-icon:hover {
+  transform: scale(1.2);
 }
 
 /* Formulario Login */
@@ -121,34 +143,57 @@ body {
 
 /* Topo Carrinho */
 
-.base-topo .carrinho-topo {
-    margin: 0 0 0 5px;
-}
 
 #carrinho-icon img {
     width: 35px; 
     height: 35px;
-    border: 1px solid #5e381a;
-    border-radius: 22px;
 }
 
 .icones-topo {
-    display: flex;
-    padding-top: 2%;
-    margin: 0 0 0 10%;
+  flex-direction: column; /* Alinha os ícones um abaixo do outro em dispositivos móveis */
 }
 
 #carrinho-icon {
-    transition: transform 0.5s ease-in-out; 
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  transition: transform 0.5s ease-in-out; 
+}
+
+#carrinho-icon p {
+  font: bolder italic 18px 'Times New Roman', Times, serif;
+  margin-left: 5px;
 }
 
 #carrinho-icon:hover {
     transform: scale(1.2);
 }
 
+/*Menu topo*/
+
+#menu-topo-icon img {
+  width: 35px; 
+  height: 35px;
+}
+
+#menu-topo-icon {
+  display: none;
+  align-items: center;
+  transition: transform 0.5s ease-in-out; 
+}
+
+#menu-topo-icon p {
+  font: bolder italic 18px 'Times New Roman', Times, serif;
+  margin-left: 5px;
+}
+
+#menu-topo-icon:hover {
+  transform: scale(1.2);
+}
+
 /* Navegação */
 
-.container {    
+.container-menu {    
     display: flex;
     justify-content: center;
     width: 55%;
@@ -159,7 +204,7 @@ body {
 }
 
 
-.container ul{
+.container-menu ul{
     display: flex;
     list-style-type: none;
 }
@@ -257,55 +302,23 @@ body {
     height: 25px;
   }
 
-  /* Botão Pesquisar */
-
-  #pesquisar {
-    justify-content: center;
-    display: flex;
-}
-
-
-
-form input[type="search"]{
-    border: 1px solid #5e381a;
-    width: 10px;
-    height: 10px;
-    padding: 20px;
-    border-radius: 200px;
-    box-shadow: 4px 4px 6px rgb(0,0,0,0,7);
-    background: url(../assets/icones/procurar.png) no-repeat center center;
-    background-size: 20px;
-    transition: width 0.5s ease;
-}
-
-form input[type="search"]:focus {
-    width: 25%;
-    height: 100%;
-    padding: 6px 6px 6px 55px;
-    outline: none;
-    background: url(../assets/icones/procurar.png) no-repeat 20px center;
-    background-size: 18px;
-    text-align: center;
-    padding-right: 30px;
-    font: italic 17px 'Times New Roman', Times, serif;
-    color: rgb(83, 83, 83);
-}
 
 /* Responsividade */
 
 @media only screen and (max-width: 1349px) {
 
-    .base-topo .logo-topo {
-        margin: 0 0 0 20%;
+    .icones-topo {
+      flex-direction: column; /* Alinha os ícones um abaixo do outro em dispositivos móveis */
     }
 
-    .nav-ico{
+    .container-menu{
         display: none;
     }
 
-    #icon-menu {
-        display: block;
+    #menu-topo-icon {
+      display: flex;
     }
+
 }
 
  /* Tablet */
@@ -337,23 +350,32 @@ form input[type="search"]:focus {
       flex-direction: column; /* Alinha os ícones um abaixo do outro em dispositivos móveis */
     }
 
-    .base-topo .carrinho-topo {
-        margin: 0 0 0 0;
-    }
+    .login-icon img {
+      width: 25px; 
+      height: 25px;
+  }
 
-    #carrinho-icon img {
-        width: 25px; 
-        height: 25px;
-        border: 1px solid #5e381a;
-        border-radius: 22px;
-    }
+  .login-icon p {
+    font: bolder italic 15px 'Times New Roman', Times, serif;
+  }
 
-    #login-icon img {
-        width: 25px; 
-        height: 25px;
-        border: 1px solid #5e381a;
-        border-radius: 22px;
-    }
+  #carrinho-icon img {
+    width: 25px; 
+    height: 25px;
+  }
+
+  #carrinho-icon p {
+    font: bolder italic 15px 'Times New Roman', Times, serif;
+  }
+
+  #menu-topo-icon img {
+    width: 25px; 
+    height: 25px;
+  }
+
+  #menu-topo-icon p {
+    font: bolder italic 15px 'Times New Roman', Times, serif;
+  }
 
     /* Form Login*/
 
@@ -389,25 +411,12 @@ form input[type="search"]:focus {
     .nav-conf li {  
         font: italic bolder 15px 'Times New Roman', Times, serif;
     }
-
-    /* Pesquisar */
-
-    form input[type="search"]{
-      padding: 17px;
-      background-size: 18px;
   }
   
-  form input[type="search"]:focus {
-      height: 35px;
-      padding: 6px 6px 6px 30px;
-      background-size: 18px;
-      font: italic 15px 'Times New Roman', Times, serif;
-  }
-  }
 
   /* Celular */
 
-  @media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 606px) {
 
     /*Frete*/
 
@@ -422,6 +431,10 @@ form input[type="search"]:focus {
 
     /*Logo*/
 
+    .icones-topo {
+      margin: 0 0 0 2%;
+    }
+
     #logo-img img {
         width: 150px; 
         height: 100px; 
@@ -434,22 +447,31 @@ form input[type="search"]:focus {
       flex-direction: column; /* Alinha os ícones um abaixo do outro em dispositivos móveis */
     }
 
-    .base-topo .carrinho-topo {
-        margin: 0 0 0 0;
+    .login-icon img {
+        width: 20px; 
+        height: 20px;
+    }
+
+    .login-icon p {
+      font: bolder italic 12px 'Times New Roman', Times, serif;
     }
 
     #carrinho-icon img {
-        width: 20px; 
-        height: 20px;
-        border: 1px solid #5e381a;
-        border-radius: 22px;
+      width: 20px; 
+      height: 20px;
     }
 
-    #login-icon img {
-        width: 20px; 
-        height: 20px;
-        border: 1px solid #5e381a;
-        border-radius: 22px;
+    #carrinho-icon p {
+      font: bolder italic 12px 'Times New Roman', Times, serif;
+    }
+
+    #menu-topo-icon img {
+      width: 20px; 
+      height: 20px;
+    }
+
+    #menu-topo-icon p {
+      font: bolder italic 12px 'Times New Roman', Times, serif;
     }
 
     /* Form Login*/
@@ -490,14 +512,9 @@ form input[type="search"]:focus {
     /* Pesquisar */
 
     form input[type="search"]{
-      padding: 14px;
-      background-size: 16px;
-  }
-  
-  form input[type="search"]:focus {
-    width: 30%;
-      padding-left: 40px;
-      background-size: 16px;
-      font: italic 13px 'Times New Roman', Times, serif;
-  }
+      width: 90%;
+      padding: 10px 0 10px 32px;
+      background-size: 9px;
+      font: italic 9px 'Times New Roman', Times, serif;
+    }
   }
