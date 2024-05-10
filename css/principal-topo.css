@@ -31,24 +31,129 @@ body {
     justify-content: space-evenly;
 }
 
+/* Pesquisar topo */
+
+.pesquisa-topo {
+  flex-direction: column;
+}
+
 /* Botão Pesquisar */
 
 #pesquisar {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 form input[type="search"]{
-  border: 1px solid #5e381a;
-  border-radius: 20px;
+  border: 1px solid #bda560;
+  border-radius: 10px;
   width: 100%;
   padding: 6px 0 6px 30px;
   outline: none;
-  background: url(../assets/icones/procurar.png) no-repeat 20px center;
-  background-size: 15px;
+  background: url(../assets/icones/pesquisar-f.png) no-repeat 20px center;
+  background-size: 20px;
   text-align: center;
   font: italic 15px 'Times New Roman', Times, serif;
   color: rgb(83, 83, 83);
 }
+
+/*Menu topo*/
+
+.menu-topo-icon img {
+  width: 35px; 
+  height: 35px;
+}
+
+.menu-topo-icon {
+  display: none;
+  align-items: center;
+  transition: transform 0.5s ease-in-out; 
+  margin: 5% 0 0 20%;
+}
+
+.menu-topo-icon p {
+  font: bolder italic 18px 'Times New Roman', Times, serif;
+  margin-left: 5px;
+}
+
+.menu-topo-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Drop Navegação */
+
+.nav-dropdown {
+  background-color: #FBE1EE;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  width: 0%;
+  overflow: hidden;
+  border-radius: 20px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transition: .5s;
+}
+
+.nav-dropdown.abrir-menu {
+  width: 40%;
+}
+
+.nav-dropdown.abrir-menu ~ .overlay-menu {
+  display: block;
+}
+
+.nav-dropdown .btn-fechar-menu img {
+  width: 30px;
+  height: 30px;
+  margin-left: 85%;
+  margin-top: 10px;
+}
+
+.nav-conf {
+  display: flex;
+  align-items: center;
+  padding: 30px 0 30px 40px;
+}
+
+.nav-conf:hover {
+  background-color: #c4b2bb;
+}
+
+.nav-dropdown ul li a {
+  font: italic bolder 17px 'Times New Roman', Times, serif;
+  text-decoration: none;
+  color: #5e381a;
+  margin-left: 30px;
+}
+
+.nav-dropdown ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-dropdown ul li {
+  display: inline-block;
+}
+
+.nav-dropdown img {
+  margin-left: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.overlay-menu {
+  background-color: #000000bd;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 88888;
+  display: none;
+}
+
 
 /* Topo Logo */
 
@@ -92,7 +197,7 @@ form input[type="search"]{
 
 /* Formulario Login */
 
-#meu-dropdown {
+  #meu-dropdown {
     position: relative; /* Garante que o menu dropdown seja posicionado em relação ao botão */
     right: 165px;
   }
@@ -169,38 +274,16 @@ form input[type="search"]{
     transform: scale(1.2);
 }
 
-/*Menu topo*/
-
-#menu-topo-icon img {
-  width: 35px; 
-  height: 35px;
-}
-
-#menu-topo-icon {
-  display: none;
-  align-items: center;
-  transition: transform 0.5s ease-in-out; 
-}
-
-#menu-topo-icon p {
-  font: bolder italic 18px 'Times New Roman', Times, serif;
-  margin-left: 5px;
-}
-
-#menu-topo-icon:hover {
-  transform: scale(1.2);
-}
-
 /* Navegação */
 
 .container-menu {    
     display: flex;
     justify-content: center;
     width: 55%;
-    margin: 0 auto;
-    background-color: #F8EE9C;
+    margin: 0 auto 10px auto;
+    background-color: #FFE082;
     box-shadow: 5px 5px 5px 5px#86787f5b;
-    border-radius: 15px;    
+    border-radius: 10px;    
 }
 
 
@@ -253,56 +336,6 @@ form input[type="search"]{
     height: 15px;
 }
 
-/* Drop Navegação */
-
-#nav-dropdown {
-    position: relative; /* Garante que o menu dropdown seja posicionado em relação ao botão */
-    width: 100%;
-
-  }
-  
-  #nav-dropdown ul {
-    list-style-type: none; /* Remove os marcadores de lista padrão */
-    background-color: #F8EE9C;
-    border-radius: 25px;
-    z-index: 5;
-    flex-direction: column;
-    margin-top: 0;
-  }
-
-  .nav-conf {
-    display: flex;
-    margin-top: 15px;
-    margin-right: 0;
-    border-radius: 20px;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 0;
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .nav-conf:hover {
-    transform: scale(1.2);
-  }
-
-  .nav-conf li {
-    margin-top: 3px;  
-    margin-left: 25px;   
-    font: italic bolder 18px 'Times New Roman', Times, serif;
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .nav-conf a {
-    text-decoration: none;
-    color: #5e381a;
-    font-weight: bold;
-  }
-
-  .nav-conf img {
-    width: 25px;
-    height: 25px;
-  }
-
-
 /* Responsividade */
 
 @media only screen and (max-width: 1349px) {
@@ -315,7 +348,7 @@ form input[type="search"]{
         display: none;
     }
 
-    #menu-topo-icon {
+    .menu-topo-icon {
       display: flex;
     }
 
@@ -323,7 +356,7 @@ form input[type="search"]{
 
  /* Tablet */
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1025px) {
 
     /*Frete*/
 
@@ -368,12 +401,12 @@ form input[type="search"]{
     font: bolder italic 15px 'Times New Roman', Times, serif;
   }
 
-  #menu-topo-icon img {
+  .menu-topo-icon img {
     width: 25px; 
     height: 25px;
   }
 
-  #menu-topo-icon p {
+  .menu-topo-icon p {
     font: bolder italic 15px 'Times New Roman', Times, serif;
   }
 
@@ -397,20 +430,25 @@ form input[type="search"]{
         font: italic 13px 'Times New Roman', Times, serif;
       }
 
-    /* Navegação Celular*/
+      /* Drop Navegação */
 
-    #icon-menu {
-        display: block;
-    }
+  .nav-dropdown .btn-fechar-menu img {
+    width: 30px;
+    height: 30px;
+  }
 
-    .nav-conf img {
-        width: 20px;
-        height: 20px;
-      }
+  .nav-conf {
+    padding: 30px 0 30px 20px;
+  }
 
-    .nav-conf li {  
-        font: italic bolder 15px 'Times New Roman', Times, serif;
-    }
+  .nav-dropdown ul li a {
+    font: italic bolder 18px 'Times New Roman', Times, serif;
+  }
+  
+  .nav-dropdown img {
+    width: 30px;
+    height: 30px;
+  }
   }
   
 
@@ -465,12 +503,12 @@ form input[type="search"]{
       font: bolder italic 12px 'Times New Roman', Times, serif;
     }
 
-    #menu-topo-icon img {
+    .menu-topo-icon img {
       width: 20px; 
       height: 20px;
     }
 
-    #menu-topo-icon p {
+    .menu-topo-icon p {
       font: bolder italic 12px 'Times New Roman', Times, serif;
     }
 
@@ -494,27 +532,36 @@ form input[type="search"]{
         font: italic 10px 'Times New Roman', Times, serif;
       }
 
-    /* Navegação Celular*/
-
-    #icon-menu {
-        display: block;
-    }
-
-    .nav-conf img {
-        width: 13px;
-        height: 13px;
-      }
-
-    .nav-conf li {  
-        font: italic bolder 10px 'Times New Roman', Times, serif;
-    }
-
     /* Pesquisar */
 
     form input[type="search"]{
       width: 90%;
       padding: 10px 0 10px 32px;
-      background-size: 9px;
+      background-size: 11px;
       font: italic 9px 'Times New Roman', Times, serif;
     }
+
+    /* Drop Navegação */
+
+  .nav-dropdown .btn-fechar-menu img {
+    width: 25px;
+    height: 25px;
   }
+
+  .nav-conf {
+    padding: 30px 0 30px 10px;
+  }
+
+  .nav-dropdown ul li a {
+    font: italic bolder 13px 'Times New Roman', Times, serif;
+  }
+  
+  .nav-dropdown img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .nav-dropdown.abrir-menu {
+    width: 55%;
+  }
+}

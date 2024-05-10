@@ -8,14 +8,50 @@
     <link rel="stylesheet" href="css/principal-topo.css">
     <link rel="stylesheet" href="css/principal-footer.css">
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/javascript-topo.js"></script>
+    <script src="js/javascript-topo.js" defer></script>
 </head>
 <body>
     <p id="frete-topo">Frete gratis em compras a partir de R$ 300,00</p>
     <div class="base-topo">
-        <form id="pesquisar">
-            <input type="search" name="Busca" placeholder="Buscar na Loja">
-        </form>
+        <div class="pesquisa-topo">
+            <form id="pesquisar">
+                <input type="search" name="Busca" placeholder="Buscar na Loja">
+            </form>
+            <div>
+                <div class="menu-topo-icon" id="btn-menu">
+                    <img src="assets/icones/menu-f.png" alt="Ícone Menu">
+                    <p>Menu</p>
+                </div>
+                    <div class="nav-dropdown" id="menu-mobile">
+                        <div class="btn-fechar-menu">
+                            <img src="assets/icones/excluir-f.png" alt="Fechar">
+                        </div>
+                        <ul>
+                          <div class="nav-conf">
+                            <img src="assets/icones/papelaria1.ico">
+                              <li><a href="#">Produtos</a></li>
+                          </div>
+                          <div class="nav-conf">
+                            <img src="assets/icones/escolar1.ico">
+                          <li><a href="#">Escolar</a></li>
+                          </div>
+                          <div class="nav-conf">
+                            <img src="assets/icones/escritorio1.ico">
+                          <li><a href="#">Escritorio</a></li>
+                          </div>
+                          <div class="nav-conf">
+                            <img src="assets/icones/informatica1.ico">
+                          <li><a href="#">Informatica</a></li>
+                          </div>
+                          <div class="nav-conf">
+                            <img src="assets/icones/box1.ico">
+                          <li><a href="#">Clube Encantado</a></li>
+                          </div>
+                        </ul>
+                    </div>
+                    <div class="overlay-menu" id="overlay-menu"></div>
+            </div>
+        </div>
         <div class="logo-topo">
             <div id="logo-img">
                 <a href="index.html" target="_self" rel="Prev">
@@ -56,38 +92,7 @@
                     <p>Carrinho</p>
                 </div>
             </div>
-            <div>
-                <div id="menu-topo-icon">
-                    <img src="assets/icones/menu-f.png" alt="Ícone Menu">
-                    <p>Menu</p>
-                </div>
-                <div class="menu-completo">
-                    <div id="nav-dropdown" style="display: none;">
-                        <ul>
-                          <div class="nav-conf">
-                            <img src="assets/icones/papelaria1.ico">
-                              <li><a href="#">Produtos</a></li>
-                          </div>
-                          <div class="nav-conf">
-                            <img src="assets/icones/escolar1.ico">
-                          <li><a href="#">Escolar</a></li>
-                          </div>
-                          <div class="nav-conf">
-                            <img src="assets/icones/escritorio1.ico">
-                          <li><a href="#">Escritorio</a></li>
-                          </div>
-                          <div class="nav-conf">
-                            <img src="assets/icones/informatica1.ico">
-                          <li><a href="#">Informatica</a></li>
-                          </div>
-                          <div class="nav-conf">
-                            <img src="assets/icones/box1.ico">
-                          <li><a href="#">Clube Encantado</a></li>
-                          </div>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 
@@ -135,7 +140,6 @@
                 </div>
             </ul>
     </nav>
-    <br>
     <main id="cont-index">
         <div class="product-section">
             <h2>Novidades</h2>
