@@ -1,3 +1,5 @@
+// Login
+
 document.addEventListener('DOMContentLoaded', function() {
     var botaoAbrir = document.getElementById('abrir-form');
     var meuDropdown = document.getElementById('meu-dropdown');
@@ -18,6 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  // Menu Drop
+
 let btnMenu = document.getElementById('btn-menu')
 let menu = document.getElementById('menu-mobile')
 let overlay = document.getElementById('overlay-menu')
@@ -34,3 +38,20 @@ overlay.addEventListener('click', ()=>{
   menu.classList.remove('abrir-menu')
 })
 
+  // Carrinho Drop
+
+  let btncarrinho = document.getElementById('btn-carrinho')
+  let carrinho = document.getElementById('carrinho-dropdown')
+  let overlaycarrinho = document.getElementById('overlay-carrinho')
+  
+  btncarrinho.addEventListener('click', ()=>{
+    carrinho.classList.add('abrir-carrinho')
+  })
+  
+  carrinho.addEventListener('click', ()=>{
+    carrinho.classList.remove('abrir-carrinho')
+  })
+  
+  overlaycarrinho.addEventListener('click', ()=>{
+    carrinho.classList.remove('abrir-carrinho')
+  })
