@@ -121,11 +121,25 @@
     padding-left: 0;
 }
 
+/*Fixo Insta*/
+
+.instagram-icon {
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+    z-index: 7777;
+    transition: opacity 0.3s ease; /* Adiciona uma transição de suavização */
+}
+
+.instagram-icon img {
+    width: 50px; /* ajuste o tamanho conforme necessário */
+    height: auto;
+}
 
 /* Responsividade */
 /* Tablet */
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1025px) {
 
     #titulo-footer {
         font: italic bolder 15px 'Times New Roman', Times, serif;
@@ -162,6 +176,11 @@
     .footer-bottom p {
         font: italic 13px 'Times New Roman', Times, serif;
     }
+
+    .instagram-icon img {
+        width: 40px; /* ajuste o tamanho conforme necessário */
+    }
+
 }
 
 /* Celular */
@@ -202,5 +221,14 @@
 
     .footer-bottom p {
         font: italic 10px 'Times New Roman', Times, serif;
+    }
+
+    .instagram-icon {
+        right: 5px;
+    }
+
+    .instagram-icon img {
+        width: 25px; /* ajuste o tamanho conforme necessário */
+        height: auto;
     }
 }

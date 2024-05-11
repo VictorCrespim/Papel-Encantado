@@ -5,7 +5,7 @@
 }
 
 #cont-index {
-    width: 95%;
+    width: 93%;
     margin: auto;
     padding: 10px 0;
     background-color: #FBE1EE;
@@ -94,7 +94,11 @@
   /* Responsividade */
   /* Tablet */
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1025px) {
+
+  #cont-index {
+    width: 90%; 
+}
 
   .product-section h2 {
     font: bold 3em grafolita, sans-serif;

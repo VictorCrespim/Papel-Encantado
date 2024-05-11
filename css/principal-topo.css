@@ -43,11 +43,10 @@ body {
   margin-top: 10px;
 }
 
-form input[type="search"]{
+#pesquisar input[type="search"]{
   border: 1px solid #bda560;
   border-radius: 10px;
-  width: 100%;
-  padding: 6px 0 6px 30px;
+  padding: 10px 0 10px 30px;
   outline: none;
   background: url(../assets/icones/pesquisar-f.png) no-repeat 20px center;
   background-size: 20px;
@@ -55,118 +54,6 @@ form input[type="search"]{
   font: italic 15px 'Times New Roman', Times, serif;
   color: rgb(83, 83, 83);
 }
-
-/*Menu topo*/
-
-.menu-topo-icon img {
-  width: 35px; 
-  height: 35px;
-}
-
-.menu-topo-icon {
-  display: none;
-  align-items: center;
-  transition: transform 0.5s ease-in-out; 
-  margin: 5% 0 0 20%;
-}
-
-.menu-topo-icon p {
-  font: bolder italic 18px 'Times New Roman', Times, serif;
-  margin-left: 5px;
-}
-
-.menu-topo-icon:hover {
-  transform: scale(1.2);
-}
-
-/* Drop Navegação */
-
-.nav-dropdown {
-  background-color: #FBE1EE;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99999;
-  width: 0%;
-  overflow: hidden;
-  border-radius: 20px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  transition: .5s;
-}
-
-.nav-dropdown.abrir-menu {
-  width: 40%;
-}
-
-.nav-dropdown.abrir-menu ~ .overlay-menu {
-  display: block;
-}
-
-.btn-fechar-menu {
-  display: flex;
-  background-color: #CAE6DF;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #5e381a;
-}
-
-.nav-dropdown .btn-fechar-menu img {
-  width: 30px;
-  height: 30px;
-  margin-right: 5%;
-}
-
-.nav-dropdown .btn-fechar-menu p {
-  font: 30px grafolita, sans-serif;
-  color: #5e381a;
-  margin-left: 5%;
-}
-
-.nav-conf {
-  display: flex;
-  align-items: center;
-  padding: 15px 0 15px 40px;
-}
-
-.nav-conf:hover {
-  background-color: #c4b2bb;
-}
-
-.nav-dropdown ul li a {
-  font: italic bolder 17px 'Times New Roman', Times, serif;
-  text-decoration: none;
-  color: #5e381a;
-  margin-left: 30px;
-}
-
-.nav-dropdown ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.nav-dropdown ul li {
-  display: inline-block;
-}
-
-.nav-dropdown img {
-  margin-left: 0;
-  width: 20px;
-  height: 20px;
-}
-
-.overlay-menu {
-  background-color: #000000ab;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 88888;
-  display: none;
-}
-
 
 /* Topo Logo */
 
@@ -333,7 +220,7 @@ form input[type="search"]{
 }
 
 .cont-carrinho {
-  margin-top: 15%;
+  margin: 15% 5% 0 5%;
   text-align: center;
 }
 
@@ -462,6 +349,142 @@ form input[type="search"]{
     height: 15px;
 }
 
+/*Fixo Menu*/
+
+.menu-lateral-icon {
+  display: none;
+  position: fixed;
+  top: 100px;
+  left: 5px;
+  z-index: 7777;
+  transition: opacity 0.3s ease; /* Adiciona uma transição de suavização */
+}
+
+.menu-lateral-icon img {
+  width: 35px; 
+  height: 35px;
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+
+.menu-lateral-icon p {
+  margin-top: 0;
+  font: bolder italic 18px 'Times New Roman', Times, serif;
+  align-items: center;
+}
+
+/* Drop Navegação */
+
+.nav-dropdown {
+  background-color: #FBE1EE;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  width: 0%;
+  overflow: hidden;
+  border-radius: 20px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transition: .5s;
+}
+
+.nav-dropdown.abrir-menu {
+  width: 40%;
+}
+
+.nav-dropdown.abrir-menu ~ .overlay-menu {
+  display: block;
+}
+
+.btn-fechar-menu {
+  display: flex;
+  background-color: #CAE6DF;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #5e381a;
+}
+
+.nav-dropdown .btn-fechar-menu img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5%;
+}
+
+.nav-dropdown .btn-fechar-menu p {
+  font: 30px grafolita, sans-serif;
+  color: #5e381a;
+  margin-left: 5%;
+}
+
+.nav-dropdown hr {
+  border-bottom: 1px solid #9c5d2c;
+  margin-top: 20px;
+  width: 70%;
+}
+
+.nav-dropdown #pesquisar-drop {
+    margin-top: 20px;
+    display: flex; /* Necessário para o margin funcionar */
+    justify-content: center;
+}
+
+#pesquisar-drop input[type="search"]{
+  border: 1px solid #5e381a;
+  border-radius: 10px;
+  padding: 10px 0 10px 10%;
+  outline: none;
+  background: url(../assets/icones/pesquisar-f.png) no-repeat 20px center;
+  background-size: 25px;
+  text-align: center;
+  font: italic 17px 'Times New Roman', Times, serif;
+  color: rgb(44, 44, 44);
+}
+
+.nav-conf {
+  display: flex;
+  align-items: center;
+  padding: 25px 0 25px 40px;
+}
+
+.nav-conf:hover {
+  background-color: #c4b2bb;
+}
+
+.nav-dropdown ul li a {
+  font: italic bolder 22px 'Times New Roman', Times, serif;
+  text-decoration: none;
+  color: #5e381a;
+  margin-left: 40px;
+}
+
+.nav-dropdown ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-dropdown ul li {
+  display: inline-block;
+}
+
+.nav-dropdown img {
+  margin-left: 0;
+  width: 35px;
+  height: 35px;
+}
+
+.overlay-menu {
+  background-color: #000000ab;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 88888;
+  display: none;
+}
+
 /* Responsividade */
 
 @media only screen and (max-width: 1349px) {
@@ -474,9 +497,11 @@ form input[type="search"]{
         display: none;
     }
 
-    .menu-topo-icon {
-      display: flex;
-    }
+    
+
+    .menu-lateral-icon {
+      display: block;
+  }
 
 }
 
@@ -614,6 +639,28 @@ form input[type="search"]{
     height: 70px;
   }
 
+  /*Menu fixo*/
+  
+  .menu-lateral-icon {
+    top: 80px;
+    left: 15px;
+  }
+
+  .menu-lateral-icon img {
+    width: 25px;
+    height: 25px; /* ajuste o tamanho conforme necessário */
+  }
+
+  .menu-lateral-icon p {
+    font: bolder italic 15px 'Times New Roman', Times, serif;
+  }
+
+  #pesquisar-drop input[type="search"]{
+    padding: 7px 0 7px 9%;
+    background-size: 20px;
+    font: italic 14px 'Times New Roman', Times, serif;
+  }
+
 }
   
 
@@ -634,9 +681,10 @@ form input[type="search"]{
 
     /*Logo*/
 
-    .icones-topo {
-      margin: 0 0 0 2%;
-    }
+    .base-topo {
+      justify-content: center;
+      margin-left: 30%;
+  }
 
     #logo-img img {
         width: 150px; 
@@ -671,10 +719,12 @@ form input[type="search"]{
     .menu-topo-icon img {
       width: 20px; 
       height: 20px;
+      margin-left: 10px;
     }
 
     .menu-topo-icon p {
       font: bolder italic 12px 'Times New Roman', Times, serif;
+      margin-right: 40px;
     }
 
     /* Form Login*/
@@ -700,26 +750,19 @@ form input[type="search"]{
     /* Pesquisar */
 
     #pesquisar {
-      margin-left: 10px;
+      display: none;
     }
 
-    form input[type="search"]{
-      width: 90%;
-      padding: 10px 0 10px 35px;
-      margin: 0;
-      background-size: 11px;
-      font: italic 8px 'Times New Roman', Times, serif;
-    }
 
     /* Drop Navegação */
 
   .nav-dropdown .btn-fechar-menu img {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
   }
 
   .nav-conf {
-    padding: 15px 0 15px 40px;
+    padding: 15px 0 15px 15px;
   }
 
   .nav-dropdown ul li a {
@@ -755,25 +798,47 @@ form input[type="search"]{
   }
 
   .cont-carrinho p {
-    font: bolder italic 25px 'Times New Roman', Times, serif;
+    font: bolder italic 20px 'Times New Roman', Times, serif;
   }
 
   .valor-carrinho p {
-    font: bolder 20px 'Times New Roman', Times, serif;
+    font: bolder 15px 'Times New Roman', Times, serif;
   }
 
   .comprar-carrinho p {
-    font: italic bolder 13px 'Times New Roman', Times, serif;
-    margin-top: 15px;
+    font: italic bolder 11px 'Times New Roman', Times, serif;
+    margin-top: 10px;
   }
 
   .comprar-carrinho button {
-    font: italic 14px 'Times New Roman', Times, serif;
-    padding: 15px 30%;
+    font: italic 12px 'Times New Roman', Times, serif;
+    padding: 10px 30%;
   }
 
   .cont-carrinho img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+  }
+
+  /*Menu fixo*/
+  
+  .menu-lateral-icon {
+    top: 40px;
+    left: 5px;
+  }
+
+  .menu-lateral-icon img {
+    width: 20px;
+    height: 20px; /* ajuste o tamanho conforme necessário */
+  }
+
+  .menu-lateral-icon p {
+    font: bolder italic 13px 'Times New Roman', Times, serif;
+  }
+
+  #pesquisar-drop input[type="search"]{
+    padding: 5px 0 5px 10%;
+    background-size: 15px;
+    font: italic 12px 'Times New Roman', Times, serif;
   }
 }
