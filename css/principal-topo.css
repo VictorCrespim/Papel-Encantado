@@ -119,29 +119,158 @@ body {
   margin-left: 5%;
 }
 
-.nav-dropdown hr {
+#hr-menu-drop {
   border-bottom: 1px solid #9c5d2c;
-  margin-top: 20px;
   width: 70%;
 }
 
-.nav-dropdown #pesquisar-drop {
-    margin-top: 20px;
-    display: flex; /* Necessário para o margin funcionar */
-    justify-content: center;
+#drop-menu-categorias {
+  font: italic bolder 22px 'Times New Roman', Times, serif;
+  text-decoration: none;
+  color: #5e381a;
+  background-color: #CAE6DF;
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #9c5d2c;
+  text-align: center;
+  margin: 20px auto;
 }
 
-#pesquisar-drop input[type="search"]{
-  border: 1px solid #5e381a;
-  border-radius: 10px;
-  padding: 10px 0 10px 10%;
-  outline: none;
-  background: url(../assets/icones/pesquisar-f.png) no-repeat 20px center;
-  background-size: 25px;
-  text-align: center;
-  font: italic 17px 'Times New Roman', Times, serif;
-  color: rgb(44, 44, 44);
+.nav-atend {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 40px;
 }
+
+.nav-atend:hover {
+  background-color: #c4b2bb;
+}
+
+.nav-atend a {
+  font: italic bolder 22px 'Times New Roman', Times, serif;
+  text-decoration: none;
+  color: #5e381a;
+  margin-left: 40px;
+}
+
+.nav-atend img {
+  margin-left: 0;
+  width: 35px;
+  height: 35px;
+}
+
+/*Rastrear Pedido*/
+
+.info-rastrear {
+  border: 1px solid #b1b0b0;
+  border-radius: 5px;
+  padding-bottom: 15px;
+  place-items: center;
+  margin: 10px 10%;
+  justify-content: left;
+  overflow: hidden;
+}
+
+#abrir-rastrear {
+  display: none;
+}
+
+.info-rastrear p {
+  margin-top: 10px;
+  margin-left: 25px;
+  margin-bottom: 2px;
+  font: italic bolder 17px 'Times New Roman', Times, serif;
+}
+
+.info-rastrear div {
+  display: flex;
+  padding: 0 10px;
+}
+
+.info-rastrear button{
+  background-color: #853c75;
+  color: #fff;
+  width: 70px;
+  height: 50px;
+  border-radius: 7px;
+  border: none;
+  font: italic bolder 15px 'Times New Roman', Times, serif;
+  margin-left: 5px;
+}
+
+.info-rastrear input {
+  background: none;
+  border: 1px solid #b1b0b0;
+  border-radius: 7px;
+  padding: 15px;
+  width: 100%;
+  height: 20px;
+  outline: none;
+  margin-left: 10px;
+}
+
+/*Atendimento*/
+
+.info-atendimento {
+  border: 1px solid #b1b0b0;
+  border-radius: 5px;
+  padding-bottom: 15px;
+  place-items: center;
+  margin: 10px 10%;
+  justify-content: left;
+  overflow: hidden;
+}
+
+#abrir-atendimento {
+  display: none;
+}
+
+.info-atend {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.info-atend .img-atend {
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.info-atend-div p {
+  margin: 0;
+  padding: 0;
+}
+
+#info-atend-p-1 {
+  font: italic 15px 'Times New Roman', Times, serif;
+}
+
+#info-atend-p-2 {
+  font: italic bolder 15px 'Times New Roman', Times, serif;
+}
+
+#hr-atend {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  border-top: 1px solid #b1b0b0;
+}
+
+.info-horario {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.info-horario p {
+  margin: 2px;
+  padding: 0;
+}
+
+/*Conteudo nav drop*/
 
 .nav-conf {
   display: flex;
@@ -728,6 +857,54 @@ body {
     font: italic 14px 'Times New Roman', Times, serif;
   }
 
+  /* Rastrear Pedido */
+
+  .nav-atend a {
+    font: bolder italic 18px 'Times New Roman', Times, serif;
+  }
+  .nav-atend img {
+    width: 30px;
+    height: 30px; /* ajuste o tamanho conforme necessário */
+  }
+
+  .info-rastrear p {
+    font: italic bolder 15px 'Times New Roman', Times, serif;
+    }
+    .info-rastrear button{
+      width: 55px;
+      height: 40px;
+      font: italic bolder 12px 'Times New Roman', Times, serif;
+    }
+    .info-rastrear input {
+      padding: 10px;
+      height: 17px;
+      margin-top: 3px;
+    }
+
+    .info-atend .img-atend {
+      width: 23px;
+      height: 23px;
+    }
+    
+    .info-atend-div p {
+      margin: 0;
+      padding: 0;
+    }
+    
+    #info-atend-p-1 {
+      font: italic 14px 'Times New Roman', Times, serif;
+    }
+    
+    #info-atend-p-2 {
+      font: italic bolder 14px 'Times New Roman', Times, serif;
+    }
+
+    #drop-menu-categorias {
+      font: italic bolder 18px 'Times New Roman', Times, serif;
+      padding: 10px;
+      margin: 15px auto;
+    }
+
 }
   
 
@@ -916,4 +1093,70 @@ body {
     display: block;
   }
 
+  /* Rastrear Pedido */
+
+  .nav-atend {
+    padding: 0 0 0 15px;
+  }
+
+  .nav-atend a {
+    font: bolder italic 13px 'Times New Roman', Times, serif;
+  }
+  .nav-atend img {
+    width: 20px;
+    height: 20px; /* ajuste o tamanho conforme necessário */
+  }
+
+    .info-rastrear p {
+    font: italic bolder 8px 'Times New Roman', Times, serif;
+    }
+
+    .info-rastrear button{
+      width: 35px;
+      height: 25px;
+      font: italic bolder 8px 'Times New Roman', Times, serif;
+      margin-top: 3px;
+    }
+    .info-rastrear input {
+      padding: 5px;
+      height: 12px;
+      margin-top: 3px;
+    }
+
+    .info-atend {
+      margin: 5px;
+    }
+
+    .info-atend .img-atend {
+      width: 12px;
+      height: 12px;
+      margin-right: 5px;
+    }
+    
+    .info-atend-div p {
+      margin: 0;
+      padding: 0;
+    }
+    
+    #info-atend-p-1 {
+      font: italic 8px 'Times New Roman', Times, serif;
+    }
+    
+    #info-atend-p-2 {
+      font: italic bolder 8px 'Times New Roman', Times, serif;
+    }
+
+    .info-atend {
+      margin-bottom: 10px;
+    }
+
+    .info-horario {
+      margin-top: 5px;
+    }
+
+    #drop-menu-categorias {
+      font: italic bolder 13px 'Times New Roman', Times, serif;
+      padding: 10px;
+      margin: 5px auto;
+    }
 }

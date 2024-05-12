@@ -102,6 +102,27 @@ overlayinf.addEventListener('click', ()=>{
   pesqInf.classList.remove('pesqInferior')
 })
 
+// Atendimento
+
+document.getElementById('atendimento').addEventListener('click', function() {
+  var abrirAtendimento = document.getElementById('abrir-atendimento');
+  if (abrirAtendimento.style.display === 'none') {
+    abrirAtendimento.style.display = 'block';
+  } else {
+    abrirAtendimento.style.display = 'none';
+  }
+});
+
+// Rastrear Pedido
+
+document.getElementById('rastrear').addEventListener('click', function() {
+  var abrirRastrear = document.getElementById('abrir-rastrear');
+  if (abrirRastrear.style.display === 'none') {
+    abrirRastrear.style.display = 'block';
+  } else {
+    abrirRastrear.style.display = 'none';
+  }
+});
 
 
 
