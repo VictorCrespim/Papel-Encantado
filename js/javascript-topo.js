@@ -23,11 +23,16 @@ document.addEventListener('DOMContentLoaded', function() {
   // Menu Drop
 
 let btnMenu = document.getElementById('btn-menu')
+let btnMenuInf = document.getElementById('btn-menu-inferior')
 let menu = document.getElementById('menu-mobile')
 let fecharMenu = document.getElementById('fechar-menu')
 let overlay = document.getElementById('overlay-menu')
 
 btnMenu.addEventListener('click', ()=>{
+  menu.classList.add('abrir-menu')
+})
+
+btnMenuInf.addEventListener('click', ()=>{
   menu.classList.add('abrir-menu')
 })
 
@@ -42,11 +47,16 @@ overlay.addEventListener('click', ()=>{
   // Carrinho Drop
 
   let btncarrinho = document.getElementById('btn-carrinho')
+  let btncarrinhoInf = document.getElementById('btn-carrinho-inferior')
   let carrinho = document.getElementById('carrinho-dropdown')
   let fecharCarrinho = document.getElementById('fechar-carrinho')
   let overlaycarrinho = document.getElementById('overlay-carrinho')
   
   btncarrinho.addEventListener('click', ()=>{
+    carrinho.classList.add('abrir-carrinho')
+  })
+
+  btncarrinhoInf.addEventListener('click', ()=>{
     carrinho.classList.add('abrir-carrinho')
   })
   
@@ -57,3 +67,42 @@ overlay.addEventListener('click', ()=>{
   overlaycarrinho.addEventListener('click', ()=>{
     carrinho.classList.remove('abrir-carrinho')
   })
+
+  // Drop Menu Inferior
+
+  window.addEventListener('scroll', function() {
+    var logo = document.getElementById('logo-img');
+    var menu = document.querySelector('.menu-inferior');
+    var logoPosition = logo.getBoundingClientRect().bottom;
+
+    if (logoPosition < 0) {
+        // Se a logo estiver fora da tela
+        menu.style.height = '10%';
+    } else {
+        // Se a logo estiver visível na tela
+        menu.style.height = '0%';
+    }
+});
+
+// Pesquisar Menu Inferior
+
+let pesquisarInf = document.getElementById('pesquisa-inferior')
+let pesqInf = document.getElementById('pesq-inf')
+let buscarInf = document.getElementById('buscar-inferior')
+let overlayinf = document.getElementById('overlay-inf')
+let menuInf = document.getElementById('menuInferior')
+
+buscarInf.addEventListener('click', ()=>{
+  pesquisarInf.classList.add('pesquisarInferior')
+  pesqInf.classList.add('pesqInferior')
+})
+
+overlayinf.addEventListener('click', ()=>{
+  pesquisarInf.classList.remove('pesquisarInferior')
+  pesqInf.classList.remove('pesqInferior')
+})
+
+
+
+
+

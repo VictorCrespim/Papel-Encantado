@@ -125,7 +125,7 @@
 
 .instagram-icon {
     position: fixed;
-    bottom: 10px;
+    bottom: 120px;
     right: 5px;
     z-index: 7777;
     transition: opacity 0.3s ease; /* Adiciona uma transição de suavização */
@@ -217,6 +217,7 @@
 
     .forma-pagamento img{
         height: 60px;
+        margin-bottom: 45px;
     }
 
     .footer-bottom p {
@@ -228,7 +229,7 @@
     }
 
     .instagram-icon img {
-        width: 25px; /* ajuste o tamanho conforme necessário */
+        width: 35px; /* ajuste o tamanho conforme necessário */
         height: auto;
     }
 }
